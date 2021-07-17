@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+         box-sizing: border-box;
+         
+        }
+        .main{
+            
+            background-image: url(dog.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin-bottom: 120px;
+            
+        }
+        .navbar{
+            
+            display: flex;
+            align-items: center;
+            position: sticky;
+        }
+        .navbar ul{
+            padding-left: 350px;
+
+        }
+        ul li{
+            font-size: 25px;
+            padding: 20px;
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            color: #fff ;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        input{
+            padding: 15px;  
+            border-radius: 40px;
+        }
+        .navbar h1{
+            margin-left: 40px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .navbar h1:hover{
+            color: rgb(228, 55, 55);
+        }
+        .intro{
+            color: #fff;
+            margin: 250px 150px;
+            font-size: x-large;
+        }
+        .intro button{
+            margin-top: 30px;
+            cursor: pointer;
+            padding: 20px;
+            border:1px solid white
+        }
+        .intro button:hover{
+            background-color: transparent;
+            color: #fff;
+        }
+        #btn2{
+            background-color: transparent;
+            color:#fff;
+        }
+        #btn2:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        .secondpage{
+            margin-bottom: 180px;
+        }
+        .secondpage>img{
+            height: 60vh;
+            margin-left: 70px;
+        }
+        .about{
+            height: 20vh;
+            max-width: 500px;
+            position: relative;
+            left: 750px;
+            bottom: 380px;
+        }
+        .fa-color{
+            color: rgb(228, 55, 55);;
+        }
+        .mission{
+            height: 20vh;
+            max-width: 250px;
+            position: relative;
+            left: 750px;
+            bottom: 320px;
+        }
+        .vision{
+            height: 20vh;
+            max-width: 250px;
+            position: relative;
+            left: 1000px;
+            bottom: 451px;
+        }
+        .whatdowe{
+            position: relative;
+            max-width: 550px;
+            bottom: 450px;
+            left: 450px;
+        }
+        .whatdowe h1{
+          padding-left: 120px;
+        }
+        .img1{
+        background-color: rgb(248, 248, 248);
+         max-width: 317px;
+         cursor: pointer;
+         padding-bottom: 20px;
+        }
+        .img1:hover{
+            box-shadow: 0 0 10px 0.5px black;
+        }
+        .thirdpage h1:hover{
+            color: rgb(228, 55, 55);
+        }
+        .images{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            bottom: 350px;
+        }
+        .customers{
+            height: 20vh;
+            max-width: 500px;
+            position: relative;
+            left: 50px;
+            bottom: 200px;
+            font-size: 20px;
+        }
+        .inner4{
+            position: relative;
+            left: 50px;
+            max-width: 500px;
+            height: 120px;
+            display: flex;
+            
+               
+        }
+        .satisfaction{
+            padding-left: 150px;
+        }
+        .review>img{
+            height: 7vh;
+            max-width: auto;
+            border-radius: 60px;
+        }
+        .review{
+            position: relative;
+            bottom: 350px;
+            left: 450px;
+            max-width: 700px;    
+        }
+        .fa-color2{
+            color: rgb(37, 37, 99);
+        }
+        .Gallery{
+            position: relative;
+            max-width: 550px;
+            margin-top: 100px;
+            left: 450px;
+            margin-bottom: 50px;
+        }
+        .Gallery h1{
+          padding-left: 180px;
+        }
+        .fifthpage>img{
+            margin-left: 200px;
+        }
+        .sixthpage{
+            margin-top: 120px;
+            margin-left: 150px;
+        }
+        .inner6{
+            position:relative;
+            bottom: 300px;
+            left: 400px;
+            display: flex;
+        }
+        .inner66{
+            position:relative;
+            bottom: 300px;
+            left: 400px;
+            display: flex;
+            padding-top: 50px;
+        }
+        
+        .dogsit{
+            max-width: 300px;
+        }
+        .btn{
+            margin-top: 30px;
+            cursor: pointer;
+            padding: 20px;
+            border:1px solid white
+        }
+        .btn:hover{
+            background-color:transparent;
+            color: #fff;
+        }
+        .seventhpage{
+            background-image: url(dog.jpg);
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .inner7{
+            padding-top: 80px;
+            margin-left: 100px;
+            color: #fff;
+            max-width: 500px;
+        }
+        .images7{
+            margin-top: 300px;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            bottom: 0px;
+        }
+        .lastpage{
+            background-color: #000;
+            height: 50vh;
+            color: #fff;
+            display: flex;
+        }
+        .catre ul li{
+             font-size:12px;
+             cursor: pointer;
+        }
+        .catre ul li:hover{
+            color: rgb(228, 55, 55);
+        }
+        .care{
+            padding: 50px;
+            padding-left: 100px;
+            max-width: 400px;
+        }
+        .email{
+            padding-left: 300px;
+            max-width: 650px;
+        }
+        .layicons{
+            background-color:#000;
+            color: #fff;
+            padding-left: 400px;
+            height: 20vh;
+            padding-top: 20px;
+            border-top: 2px solid #fff;    
+        }
+        
+       
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/69fede4940.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all">
+    <div class="main">
+    <div class="navbar">
+        <h1> <i class="fas fa-paw"></i> Dogs Care </h1>
+        <ul>
+            <li> <a href=""> Home</a> </li>
+            <li><a href=""> About </a></li>
+            <li><a href=""> Services</a></li>
+            <li><a href=""> Pages</a></li>
+            <li><a href=""> Contact</a></li>
+        </ul>
+        <input type="search" placeholder="Enter Keyword" >
+</div>
+   <div class="intro">
+       <h2>Providing Special Care</h2>
+       <h2>For Your Pets!</h2>
+       <p>We offer special services for special pets!</p>
+       <button>View our services</button>
+       <button id="btn2">Hire us</button>
+   </div>
+</div>
+<div class="secondpage">
+    <img src="human_dog.jpg" alt="">
+    <div class="about">
+        <h1>About us</h1> <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, corporis.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, sit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, maxime?
+        </p>
+    </div>
+    <div class="mission">
+        <i class="fas fa-paw fa-2x fa-color"></i>
+        <h2>Our mission</h2> <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, numquam.</p>
+
+    </div>
+    <div class="vision">
+        <i class="far fa-hand-peace fa-2x fa-color"></i>        <h2>Our vision</h2> <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, numquam.</p>
+    </div>
+</div>
+<div class="thirdpage">
+    <div class="whatdowe">
+        <H1>What do we do</H1> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Possimus excepturi sunt doloribus voluptatem omnis sapiente cum a laudantium officia voluptas.</p>
+    </div>
+    <div class="images">
+    <div class="img1">
+        <img src="dog2.jpg" alt=""> <br>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cumque.</p> <br><br>
+        <h4 class="fa-color">Read me</h4>
+    </div>
+    <div class="img1">
+        <img src="dog2.jpg" alt=""> <br>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cumque.</p> <br><br>
+        <h4 class="fa-color">Read me</h4>
+    </div>
+    <div class="img1">
+        <img src="dog2.jpg" alt=""> <br>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cumque.</p> <br><br>
+        <h4 class="fa-color">Read me</h4>
+    </div>
+</div>
+
+</div>
+<div class="fourthpage">
+    <div class="customers">
+    <h1>Happy Customers</h1> <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Maiores dolorem tempore excepturi ipsum quam ullam. Lorem ipsum dolor sit amet consectetur  </p><br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Animi commodi modi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste at aut asperiores, officiis dolor sim</p></div>
+    </div>
+   <div class="inner4">
+       <div class="custom">
+        <i class="fas fa-user-plus fa-2x fa-color2"></i>
+           <h1>100K+</h1>
+           <p>Customers</p>
+       </div>
+       <div class="satisfaction">
+        <i class="fas fa-thumbs-up fa-2x fa-color2"></i>
+        <h1>100%</h1>
+        <p>satisfaction</p>
+    </div>
+    <div class="review">
+        
+            <img src="human1 .jpg" alt="">
+            <H1 class="fa-color2">"</H1>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Numquam dolores dignissimos  ex iure at rerum!</p>
+            <br>
+            <h4 class="fa-color2">Mario spe</h4><br><br>
+        
+       
+            <img src="human2.jpg" alt="">
+            <H1 class="fa-color2">"</H1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Numquam doloresam ex iure at rerum!</p>
+            <br>
+            <h4 class="fa-color2">Petey Cru</h4>
+       
+    </div>
+   </div>
+   <div class="fifthpage">
+    <div class="Gallery">
+        <H1>Gallery</H1> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Possimus excepturi sunt doloribus voluptatem omnis sapiente cum a laudantium officia voluptas.</p>
+    </div>
+    <img src="dogcollect.PNG" alt="">
+   </div>
+   <div class="sixthpage">
+       <img src="dog3.PNG" alt="">
+       <div class="inner6">
+           <div class="dogsit">
+            <i class="fas fa-thumbs-up fa-color"></i>
+            <h4>Dog sitting</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, esse.</p>
+           </div>
+           <div class="dogsit">
+            <i class="fas fa-paw fa-color"></i>
+            <h4>Dog Walking</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, esse.</p>
+           </div>
+       </div>
+       <div class="inner66">
+        <div class="dogsit">
+            <i class="fas fa-bullhorn fa-color"></i>
+            <h4>Dog Dentistry</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, esse.</p>
+           </div>
+           <div class="dogsit">
+            <i class="fas fa-cut fa-color"></i>
+            <h4>Dog Grooming</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, esse.</p>
+           </div>
+       </div>
+   </div>
+   <div class="seventhpage">
+       <div class="inner7">
+       <h5>Pet lovers</h5>
+       <h1>Our Team Is Filled With Highly
+            Dedicated Pet Lovers</h1>
+            <button class="btn">Read more</button>
+        </div>
+   </div>
+   <div class="eightthpage">
+    <div class="images7">
+        <div class="img1">
+            
+            <img src="dog2.jpg" alt=""> <br>
+            <h2>Hello World</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cumque.</p> <br><br>
+            <h4 class="fa-color2">Read more></h4>
+        </div>
+        <div class="img1">
+            <img src="dog2.jpg" alt=""> <br>
+            <h2>How to keep your dog cool this summer</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cumque.</p> <br><br>
+            <h4 class="fa-color2">Read more></h4>
+        </div>
+        <div class="img1">
+            <img src="dog2.jpg" alt=""> <br>
+            <h2>solution for grooming behavoiours</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cumque.</p> <br><br>
+            <h4 class="fa-color2">Read more></h4>
+        </div>
+    </div>
+    <div class="whatdowe">
+        <H1>Latest news</H1> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Possimus excepturi sunt doloribus voluptatem omnis sapiente cum a laudantium officia voluptas.</p>
+    </div>
+   </div>
+   <div class="lastpage">
+       <div class="care">
+           <H1><i class="fas fa-paw fa-color"></i>Dogs care</H1> <br>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis aliquid vero.</p>
+       </div>
+       <div class="catre">
+        <H1>categories</H1> <br>
+        <ul>
+            <li>>Customers</li><br>
+            <li>>Dog care</li><br>
+            <li>>Pets</li><br>
+            <li>>Uncatogerized</li>
+          </ul>
+    </div>
+    <div class="email">
+        <h1>Newsletter</h1><br>
+        <h1>Subscribe here now</h1><br>
+        <input type="Email" placeholder="Email address"> <button><i class="fas fa-share-square fa-2x fa-color"></i></button><br>
+        <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+    </div>
+
+   </div>
+   <div class="layicons">
+    <p><i class="far fa-copyright"></i>2021 Dogs Care. All Rights Reserved | WordPress Theme by W3Layouts.
+    </p>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram-square"></i>
+</div>
+</div>
+</body>
+</html>
