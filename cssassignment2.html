@@ -286,6 +286,22 @@
         background-color: rgb(41, 40, 40);
         color: rgb(255, 255, 255);
        }
+       .head1{
+        max-width: 20rem;
+        height: 7vh;
+        overflow: hidden;
+        animation: slow 2s ;
+       }
+       @keyframes slow {
+  from {
+    max-width: 5rem;
+  }
+  to {
+    max-width: 20rem;
+  }
+}
+       
+
         
        
         
@@ -312,11 +328,11 @@
             <li><a href=""> Contact</a></li>
         </ul>
         <input type="search" placeholder="Enter Keyword">
-        <i class="far fa-moon" onclick="myFunction()"></i>
+        <i class="far fa-moon" onclick="myFunction(this)"></i>
     </nav>
    <div class="intro">
        <h2>Providing Special Care</h2>
-       <h2>For Your Pets!</h2>
+       <h2 class="head1">For your pets! </h2>
        <p>We offer special services for special pets!</p>
        <button>View our services</button>
        <button id="btn2">Hire us</button>
@@ -513,10 +529,13 @@
   $(window).scroll(function(){
       $('nav').toggleClass('scrolled',$(this).scrollTop()>100)
   })
-  function myFunction() {
+  function myFunction(icon) {
   var element = document.body;
   element.classList.toggle("darkmode");
+  icon.classList.toggle("fa-sun");
 }
+
+
 </script>
 </body>
 </html>
