@@ -14,14 +14,18 @@
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
-            margin-bottom: 120px;
+            position: relative;
+            bottom: 250px;
             
         }
-        .navbar{
-            
+        .navbar{        
             display: flex;
             align-items: center;
-            position: sticky;
+            position: fixed;
+        }
+        nav{
+            cursor: pointer;
+            z-index: 9999;
         }
         .navbar ul{
             padding-left: 350px;
@@ -48,6 +52,9 @@
             color: #fff;
             cursor: pointer;
         }
+        .navbar i:hover{
+            color: rgb(228, 55, 55);
+        }
         .navbar h1:hover{
             color: rgb(228, 55, 55);
         }
@@ -55,6 +62,8 @@
             color: #fff;
             margin: 250px 150px;
             font-size: x-large;
+            position: relative;
+            top: 280px;
         }
         .intro button{
             margin-top: 30px;
@@ -75,6 +84,8 @@
             color: #000;
         }
         .secondpage{
+            position: relative;
+            bottom: 70px;
             margin-bottom: 180px;
         }
         .secondpage>img{
@@ -260,6 +271,23 @@
             padding-top: 20px;
             border-top: 2px solid #fff;    
         }
+        nav.scrolled{
+            background-color:#fff;
+            color: black ;
+            padding-left: 42.5px;
+        }
+        nav.scrolled a{
+            color: black;
+        }
+        nav.scrolled h1{
+            color: black;
+        }
+        .darkmode {
+        background-color: rgb(41, 40, 40);
+        color: rgb(255, 255, 255);
+       }
+        
+       
         
        
         
@@ -267,13 +295,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/69fede4940.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <div class="all">
     <div class="main">
-    <div class="navbar">
+    <nav class="navbar">
         <h1> <i class="fas fa-paw"></i> Dogs Care </h1>
         <ul>
             <li> <a href=""> Home</a> </li>
@@ -282,8 +311,9 @@
             <li><a href=""> Pages</a></li>
             <li><a href=""> Contact</a></li>
         </ul>
-        <input type="search" placeholder="Enter Keyword" >
-</div>
+        <input type="search" placeholder="Enter Keyword">
+        <i class="far fa-moon" onclick="myFunction()"></i>
+    </nav>
    <div class="intro">
        <h2>Providing Special Care</h2>
        <h2>For Your Pets!</h2>
@@ -479,5 +509,14 @@
     <i class="fab fa-instagram-square"></i>
 </div>
 </div>
+<script>
+  $(window).scroll(function(){
+      $('nav').toggleClass('scrolled',$(this).scrollTop()>100)
+  })
+  function myFunction() {
+  var element = document.body;
+  element.classList.toggle("darkmode");
+}
+</script>
 </body>
 </html>
